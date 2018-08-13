@@ -1,5 +1,5 @@
 body{
-  margin-top:100px;
+  margin-top:50px;
   font-size:16px;
 }
 
@@ -7,9 +7,10 @@ h1,h2,h3,h4,h5,h6{
   font-family:Poppins;
 }
 
-p{
+p, footer{
   font-family:Roboto;
 }
+
 
 .navbar-default{
   background:#fff;
@@ -25,9 +26,17 @@ p{
 }
 
 #showcase {
-  background:url(../img/home.jpg);
   padding:40px;
-  color:#fff;
+}
+
+#showcase .showcase-left {
+  margin-bottom: 50px;
+}
+
+#showcase .showcase-right{
+  margin-top: 30px;
+  /* background-image:url("../img/home.jpg");
+  background-size: auto; */
 }
 
 #showcase h1{
@@ -35,54 +44,134 @@ p{
 }
 
 #showcase h3{
-  font-size:25px;
+  font-size:20px;
   color: #333;
 }
 
 #showcase .options{
-  margin-left: 210px;
-}
-
-#showcase .less-focus{
-  color: #333;
+  margin-left: 0;
 }
 
 
 
 #experience{
-  background:#f1f1f1;
-  padding: 50px 0 30px 0;
-  text-align:center;
-  margin-top:40px;
+  /* background:#f1f1f1; */
+  padding: 40px;
+  text-align:left;
+}
+
+#experience .row {
+  margin-top: 20px;
+}
+
+#experience .col-sm-4 {
+  text-align: center;
+  padding: 10px;
+}
+
+#experience img{
+  object-fit: contain;
+  width: 120px;
+  height: 120px;
 }
 
 #experience p{
-  font-size:32px;
+  font-size:15px;
   font-family: 'Josefin Sans';
-  color:#000;
 }
 
-#experience p.customer{
-  font-size:20px;
-  color:#666;
+
+
+#projects {
+  padding: 40px;
 }
 
-#projects .info-right{
-  margin-top:90px;
+#projects .row{
+  margin-top: 20px;
 }
+
+#projects img:hover{
+  filter: blur(3px);
+}
+
+#projects img{
+  /* width: 80%; */
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 
 #education {
-  margin:20px 0 60px 0;
+  padding: 40px;
 }
 
+#education .row {
+  margin-top: 20px;
+}
+
+#education img{
+  object-fit: contain;
+  width: 120px;
+  height: 140px;
+}
+
+#education .col-md-6, .col-sm-6 {
+  padding: 10px;
+}
+
+
+#more{
+  padding: 40px;
+}
+
+#more p{
+  margin-top: 20px;
+}
+
+#more .h4 {
+  font-size: 20px;
+}
+
+
+
 #contact{
-  background:url(../img/image3.png);
+  background:url(../img/image5.jpg);
+  background-position: center top;
   padding:40px;
   color:#fff;
   border-top:#333 7px solid;
   border-bottom:#333 7px solid;
 }
 
-footer{
-  padding:30px;
+#contact a{
+  color: #fff;
+  padding: 2px;
 }
+
+footer{
+  padding:40px;
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #showcase .options {
+    margin-left: 230px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    margin-top:100px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
