@@ -7,8 +7,17 @@ h1,h2,h3,h4,h5,h6{
   font-family:Poppins;
 }
 
-p, footer{
+p, footer, li{
   font-family:Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 
@@ -155,6 +164,27 @@ footer{
 }
 
 
+
+/* content pages */
+#page-content {
+  padding: 40px;
+}
+
+#page-content img {
+  margin-top: 10px;
+}
+
+#page-content a {
+  font-weight: bold;
+}
+
+#page-content .content-margin {
+  margin-top: 25px;
+}
+
+
+
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #showcase .options {
@@ -164,6 +194,10 @@ footer{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #page-content .container {
+    max-width: 700px;
+    margin: auto;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
