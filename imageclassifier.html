@@ -48,11 +48,13 @@
           <p class="content-margin">For my <a href="hp.html">internship project at HP</a>, I was tasked to build an image classification android app. I had no prior knowledge about image recognition, machine learning or how to build an android app, so I searched the web on what would be the best way to build my image classifier.</p>
           <p>I settled on using Google’s TensorFlow machine learning framework, as it had some pretty comprehensive documentation. I followed the <a href="https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0">TensorFlow For Poets</a> tutorial, using my own dataset of images. My dataset was collated by mass downloading relevant images from Google Image Search using a python script.</p>
           <p>Once I trained the TensorFlow model, I proceeded to write a python script to test its accuracy. I collated a folder of test images, and my script would go through each of the pictures in the folder, classify it and compare the results with the actual label. It would then calculate the accuracy for each label, as well as the overall accuracy.</p>
-          <p>With my trained TensorFlow model, I optimized it for mobile use and then integrated it into my simple mobile application. It being my first time using Android Studio to make an android app, I struggled at first, trying to get the hang of how to create new Activities, edit Manifests and such. I eventually made a simple UI, where users could either take a new picture using the phone camera or select an image from the gallery. Once selected, the app would use the trained TensorFlow model to classify the image and display the results on the page.</p>
-          <p>It was quite tough figuring out how to invoke the trained TensorFlow model from my Java program. I initially tried adapting the TensorFlow demo app on GitHub, but I soon realised that there were too many unnecessary files in that project. So instead I started a new project, wrote out the app framework, and then cloned TensorFlowImageClassifier.java and ImagePreprocessor.java to my project files. I then used the methods in those classes to invoke my classifier model.</p>
-          <p>Here is a demo of my app and the <a>GitHub link:</a></p>
+          <p>With my trained TensorFlow model, I began integrating it into my simple mobile application. It being my first time using Android Studio to make an android app, it was quite tough figuring out how to invoke the trained TensorFlow model from my Java program. But after 4 days of experimenting (and YouTube tutorials), I managed to make this basic application:</p>
+
         </div>
         <div class="right">
+          <img src="./img/appdemo.png" alt="" class="img-responsive">
+        </div>
+        <div class="left">
           <h4 class="content-margin">Further Improvements</h4>
           <p>As I just wanted to show a proof of concept, I only trained my TensorFlow model till it had an accuracy of about 87%. Further refinement to the training could be done by:</p>
           <ul>
@@ -64,8 +66,6 @@
         </div>
       </div>
     </section>
-
-
 
 
     <footer>

@@ -172,6 +172,7 @@ footer{
 
 #page-content img {
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #page-content a {
@@ -182,6 +183,17 @@ footer{
   margin-top: 25px;
 }
 
+#page-content .grid-container {
+  margin: auto;
+  grid-gap: 10px;
+  column-count: 1;
+}
+
+#page-content #photos .grid-item {
+  margin-bottom: 10px;
+}
+
+
 
 
 
@@ -190,11 +202,21 @@ footer{
   #showcase .options {
     margin-left: 230px;
   }
+  #page-content .grid-container {
+    column-count: 1;
+    margin: 0 10% 20px 10%;
+  }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #page-content .container {
+    max-width: 700px;
+    margin: auto;
+  }
+  #page-content .grid-container {
+    column-count: 2;
     max-width: 700px;
     margin: auto;
   }
@@ -204,6 +226,11 @@ footer{
 @media (min-width: 992px) {
   body {
     margin-top:100px;
+  }
+  #page-content .grid-container {
+    column-count: 3;
+    max-width: 700px;
+    margin: auto;
   }
 }
 

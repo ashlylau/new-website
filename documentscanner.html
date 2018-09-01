@@ -46,8 +46,29 @@
           <h1>Document Scanner</h1>
           <h4>2018</h4>
           <p class="content-margin">This was the second project completed during my <a href="hp.html">internship at HP</a>. I was tasked to design a smart document scanner, which automatically crops and rotates scanned images from a printer scanner.</p>
-          <p>There are two parts to the solution I came up with. The first script crops out the relevant documents from the scanned image, and the second script uses TensorFlow to identify the images’ angle of rotation and corrects it accordingly.</p>
-          <p>asnfkqclaejirkmgn</p>
+          <p>There are two parts to the solution I came up with. The first script crops out the relevant documents from the scanned image, while the second uses TensorFlow to identify the image’s angle of rotation and corrects it accordingly.</p>
+
+        </div>
+        <div class="right">
+          <h4 class="content-margin">Auto Crop</h4>
+          <p>My auto crop script uses OpenCV functions to crop out scanned receipts and name cards.</p>
+          <img src="./img/scanner2.png" alt="" class="img-responsive">
+          <img src="./img/scanner3.png" alt="" class="img-responsive">
+          <p class="content-margin">These are the results of running the script on a few test images:</p>
+          <img src="./img/scanner4.png" alt="" class="img-responsive">
+        </div>
+
+        <div class="left">
+          <h4 class="content-margin">Auto Rotation</h4>
+          <p>The auto rotation algorithm is fairly straightforward. The script uses a trained TensorFlow model to identify the angle of rotation of the images.</p>
+          <p>After identifying the accurate angle of rotation, it then uses cv2 to rotate the image to the accurate position accordingly.</p>
+          <img src="./img/scanner5.png" alt="" class="img-responsive">
+          <h5 class="content-margin">Improvements</h5>
+          <ul>
+            <li>Having a larger dataset (currently only about 100 images per category)</li>
+            <li>Classifier can be trained to be more specific (ie. One model just for receipts, another just for name cards)</li>
+            <li>Another method could be by using OCR – the angle of rotation where the OCR engine would be able to extract the most text.</li>
+          </ul>
         </div>
 
       </div>
