@@ -228,11 +228,11 @@ footer{
   body {
     margin-top:100px;
   }
-  #page-content .grid-container {
+  /* #page-content .grid-container {
     column-count: 3;
     max-width: 700px;
     margin: auto;
-  }
+  } */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
