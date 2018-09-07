@@ -171,8 +171,8 @@ footer{
 }
 
 #page-content img {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
 }
 
 #page-content a {
@@ -191,6 +191,10 @@ footer{
 
 #page-content #photos .grid-item {
   margin-bottom: 10px;
+}
+
+#page-content #photos {
+  margin-top: 10px;
 }
 
 
