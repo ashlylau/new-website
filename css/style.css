@@ -171,8 +171,7 @@ footer{
 }
 
 #page-content img {
-  /* padding-top: 10px; */
-  /* padding-bottom: 10px; */
+  padding-bottom: 10px;
 }
 
 #page-content a {
@@ -187,10 +186,6 @@ footer{
   margin: auto;
   grid-gap: 10px;
   column-count: 1;
-}
-
-#page-content #photos .grid-item {
-  margin-bottom: 10px;
 }
 
 #page-content #photos {
