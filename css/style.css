@@ -35,7 +35,8 @@ a:hover {
 }
 
 #showcase {
-  padding:40px;
+  padding:20px;
+  padding-top: 30px;
 }
 
 #showcase .showcase-left {
@@ -65,7 +66,7 @@ a:hover {
 
 #experience{
   /* background:#f1f1f1; */
-  padding: 40px;
+  padding: 20px;
   text-align:left;
 }
 
@@ -92,7 +93,7 @@ a:hover {
 
 
 #projects {
-  padding: 40px;
+  padding: 20px;
 }
 
 #projects .row{
@@ -129,7 +130,7 @@ a:hover {
   background-color: #333;
 }
 
-#projects a:hover .overlay {
+#projects .hover:hover .overlay {
   opacity: 1;
 }
 
@@ -148,7 +149,7 @@ a:hover {
 
 
 #education {
-  padding: 40px;
+  padding: 20px;
 }
 
 #education .row {
@@ -167,7 +168,7 @@ a:hover {
 
 
 #more{
-  padding: 40px;
+  padding: 20px;
 }
 
 #more p{
@@ -183,7 +184,7 @@ a:hover {
 #contact{
   background:url(../img/image6.jpg);
   background-position: center 35%;
-  padding:40px;
+  padding:20px;
   color:#fff;
   border-top:#333 7px solid;
   border-bottom:#333 7px solid;
@@ -195,14 +196,15 @@ a:hover {
 }
 
 footer{
-  padding:30px;
+  padding:20px;
 }
 
 
 
 /* content pages */
 #page-content {
-  padding: 30px;
+  padding: 20px;
+  padding-top: 30px;
 }
 
 #page-content img {
